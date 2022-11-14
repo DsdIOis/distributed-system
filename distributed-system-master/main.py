@@ -1,5 +1,6 @@
 import paho.mqtt.client as mqtt
 import time
+import random
 
 
 def on_connect(client,userdata, flags, rc):
@@ -43,9 +44,31 @@ if __name__ == '__main__':
     device.connect('localhost', 1883)
 
     while True:
-        device.publish(topic='home1/device1', payload='On, 11:11:14', qos=0, retain=False)
-        # time.sleep(2)
-        device.publish(topic='home1/device2', payload='On, 5% Hum', qos=0, retain=False)
-        # time.sleep(2)
-        device.publish(topic='home1/device3', payload='Off', qos=0, retain=False)
+
+        device.publish(topic='elevator_001/destination-floor', payload=random.randrange(-1,8), qos=0, retain=False)
+        device.publish(topic='elevator_001/current-floor', payload=random.randrange(-1,8), qos=0, retain=False)
+        device.publish(topic='elevator_001/door', payload=random.randrange(0,1), qos=0, retain=False)
+        device.publish(topic='elevator_001/people', payload=random.randrange(0,1), qos=0, retain=False)
+        device.publish(topic='elevator_001/speed', payload=random.normalvariate(2,0.3), qos=0, retain=False)
+        device.publish(topic='elevator_001/spirit-level', payload=random.randrange(-5,5), qos=0, retain=False)
+        device.publish(topic='elevator_001/weight', payload=random.normalvariate(500,100), qos=0, retain=False)
+        device.publish(topic='elevator_001/hight-difference', payload=random.randrange(-10,8), qos=0, retain=False)
+        device.publish(topic='elevator_001/vibration-amplitude', payload=random.randrange(0,8), qos=0, retain=False)
+        device.publish(topic='elevator_001/vibration-period', payload=random.randrange(-10,8), qos=0, retain=False)
+        device.publish(topic='elevator_001/voltage', payload=random.normalvariate(0,0.1), qos=0, retain=False)
+        device.publish(topic='elevator_001/alarm', payload='0', qos=1, retain=False)
+
+        device.publish(topic='elevator_002/destination-floor', payload=random.randrange(-1,8), qos=0, retain=False)
+        device.publish(topic='elevator_002/current-floor', payload=random.randrange(-1,8), qos=0, retain=False)
+        device.publish(topic='elevator_002/door', payload=random.randrange(0,1), qos=0, retain=False)
+        device.publish(topic='elevator_002/people', payload=random.randrange(0,1), qos=0, retain=False)
+        device.publish(topic='elevator_002/speed', payload=random.normalvariate(1.8,0.3), qos=0, retain=False)
+        device.publish(topic='elevator_002/spirit-level', payload=random.randrange(-9,2), qos=0, retain=False)
+        device.publish(topic='elevator_002/weight', payload=random.normalvariate(900,300), qos=0, retain=False)
+        device.publish(topic='elevator_002/hight-difference', payload=random.randrange(-1,18), qos=0, retain=False)
+        device.publish(topic='elevator_002/vibration-amplitude', payload=random.randrange(10), qos=0, retain=False)
+        device.publish(topic='elevator_002/vibration-period', payload=random.randrange(-10,10), qos=0, retain=False)
+        device.publish(topic='elevator_002/voltage', payload=random.normalvariate(1,0.1), qos=0, retain=False)
+        device.publish(topic='elevator_002/alarm', payload='0', qos=1, retain=False)
+
         time.sleep(2)

@@ -43,9 +43,17 @@ if __name__ == '__main__':
     device.connect('localhost', 1885)
 
     while True:
-        device.publish(topic='home3/device1', payload='On, 11:11:14', qos=0, retain=False)
-        # time.sleep(2)
-        device.publish(topic='home3/device2', payload='On, 5% Hum', qos=0, retain=False)
-        # time.sleep(2)
-        device.publish(topic='home3/device3', payload='Off', qos=0, retain=False)
+        device.publish(topic='elevator_004/destination-floor', payload=random.randrange(-1,3), qos=0, retain=False)
+        device.publish(topic='elevator_004/current-floor', payload=random.randrange(-1,3), qos=0, retain=False)
+        device.publish(topic='elevator_004/door', payload=random.randrange(0,1), qos=0, retain=False)
+        device.publish(topic='elevator_004/people', payload=random.randrange(0,1), qos=0, retain=False)
+        device.publish(topic='elevator_004/speed', payload=random.normalvariate(2,0.3), qos=0, retain=False)
+        device.publish(topic='elevator_004/spirit-level', payload=random.randrange(-5,5), qos=0, retain=False)
+        device.publish(topic='elevator_004/weight', payload=random.normalvariate(500,100), qos=0, retain=False)
+        device.publish(topic='elevator_004/hight-difference', payload=random.randrange(-10,8), qos=0, retain=False)
+        device.publish(topic='elevator_004/vibration-amplitude', payload=random.randrange(0,8), qos=0, retain=False)
+        device.publish(topic='elevator_004/vibration-period', payload=random.randrange(-10,8), qos=0, retain=False)
+        device.publish(topic='elevator_004/voltage', payload=random.normalvariate(0,0.1), qos=0, retain=False)
+        device.publish(topic='elevator_004/alarm', payload='0', qos=1, retain=False)
+
         time.sleep(2)

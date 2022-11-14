@@ -112,3 +112,5 @@
 1668462172: New connection from 172.20.0.1:58176 on port 2885.
 1668462172: New client connected from 172.20.0.1:58176 as mqtt-explorer-c138e565 (p2, c1, k60).
 1668462371: Client mqtt-explorer-c138e565 disconnected.
+1668463879: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1668465679: Saving in-memory database to /mosquitto/data//mosquitto.db.

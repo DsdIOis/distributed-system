@@ -119,3 +119,5 @@
 1668462373: New connection from 172.20.0.1:55666 on port 2884.
 1668462373: New client connected from 172.20.0.1:55666 as mqtt-explorer-da9677da (p2, c1, k60).
 1668462379: Client mqtt-explorer-da9677da disconnected.
+1668463836: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1668465636: Saving in-memory database to /mosquitto/data//mosquitto.db.
