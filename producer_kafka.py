@@ -5,29 +5,23 @@ from kafka import KafkaProducer
 from kafka.errors import kafka_errors
 
 
-def producer_demo():
-    producer = KafkaProducer(
-        security_protocol="PLAINTEXT",
-        bootstrap_servers=[
-            'localhost:9093',
-            'localhost:9094',
-            'localhost:9095'
-        ],
-        key_serializer=lambda k: json.dumps(k).encode(),
-        value_serializer=lambda v: json.dumps(v).encode())
-    # 发送三条消息
-    for i in range(0, 3):
-        future = producer.send(
-            'kafka_demo',
-            key='count_num',
-            value=str(i),
+class ProducerKafka:
+    def __init__(self, bootstrap_servers):
+        self.producer = KafkaProducer(
+            security_protocol="PLAINTEXT",
+
+            bootstrap_servers=bootstrap_servers,
+            key_serializer=lambda k: json.dumps(k).encode(),
+            value_serializer=lambda v: json.dumps(v).encode())
+
+    def send(self, topic, key, msg):
+        future = self.producer.send(
+            topic,
+            key=key,
+            value=msg,
             partition=0)
-        print("send {}".format(str(i)))
+        print("send {}".format(msg))
         try:
-            future.get(timeout=10)  # 监控是否发送成功
-        except kafka_errors:  # 发送失败抛出kafka_errors
+            future.get(timeout=10)  # monitor publish
+        except kafka_errors:  # fail throws kafka_errors
             traceback.format_exc()
-
-
-if __name__ == '__main__':
-    producer_demo()
