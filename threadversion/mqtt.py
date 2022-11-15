@@ -76,84 +76,84 @@ class Mqtt:
         while True:
 
             if elevator == 1:
-                # self.device.publish(topic='elevator_001/destination-floor', payload=random.randrange(-1, 8), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_001/current-floor', payload=random.randrange(-1, 8), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_001/door', payload=random.randrange(0, 1), qos=0, retain=False)
-                # self.device.publish(topic='elevator_001/people', payload=random.randrange(0, 1), qos=0, retain=False)
-                # self.device.publish(topic='elevator_001/speed', payload=random.normalvariate(2, 0.3), qos=0, retain=False)
-                # self.device.publish(topic='elevator_001/spirit-level', payload=random.randrange(-5, 5), qos=0, retain=False)
-                # self.device.publish(topic='elevator_001/weight', payload=random.normalvariate(500, 100), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_001/hight-difference', payload=random.randrange(-10, 8), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_001/vibration-amplitude', payload=random.randrange(0, 8), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_001/vibration-period', payload=random.randrange(-10, 8), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_001/voltage', payload=random.normalvariate(0, 0.1), qos=0, retain=False)
+                self.device.publish(topic='elevator_001/destination-floor', payload=random.randrange(-1, 8), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_001/current-floor', payload=random.randrange(-1, 8), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_001/door', payload=random.randrange(0, 1), qos=0, retain=False)
+                self.device.publish(topic='elevator_001/people', payload=random.randrange(0, 1), qos=0, retain=False)
+                self.device.publish(topic='elevator_001/speed', payload=random.normalvariate(2, 0.3), qos=0, retain=False)
+                self.device.publish(topic='elevator_001/spirit-level', payload=random.randrange(-5, 5), qos=0, retain=False)
+                self.device.publish(topic='elevator_001/weight', payload=random.normalvariate(500, 100), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_001/hight-difference', payload=random.randrange(-10, 8), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_001/vibration-amplitude', payload=random.randrange(0, 8), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_001/vibration-period', payload=random.randrange(-10, 8), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_001/voltage', payload=random.normalvariate(0, 0.1), qos=0, retain=False)
                 self.device.publish(topic='elevator_001/alarm', payload='0', qos=1, retain=False)
                 time.sleep(5)
 
             elif elevator == 2:
-                # self.device.publish(topic='elevator_002/destination-floor', payload=random.randrange(-1, 8), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_002/current-floor', payload=random.randrange(-1, 8), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_002/door', payload=random.randrange(0, 1), qos=0, retain=False)
-                # self.device.publish(topic='elevator_002/people', payload=random.randrange(0, 1), qos=0, retain=False)
-                # self.device.publish(topic='elevator_002/speed', payload=random.normalvariate(1.8, 0.3), qos=0, retain=False)
-                # self.device.publish(topic='elevator_002/spirit-level', payload=random.randrange(-9, 2), qos=0, retain=False)
-                # self.device.publish(topic='elevator_002/weight', payload=random.normalvariate(900, 300), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_002/hight-difference', payload=random.randrange(-1, 18), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_002/vibration-amplitude', payload=random.randrange(10), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_002/vibration-period', payload=random.randrange(-10, 10), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_002/voltage', payload=random.normalvariate(1, 0.1), qos=0, retain=False)
+                self.device.publish(topic='elevator_002/destination-floor', payload=random.randrange(-1, 8), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_002/current-floor', payload=random.randrange(-1, 8), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_002/door', payload=random.randrange(0, 1), qos=0, retain=False)
+                self.device.publish(topic='elevator_002/people', payload=random.randrange(0, 1), qos=0, retain=False)
+                self.device.publish(topic='elevator_002/speed', payload=random.normalvariate(1.8, 0.3), qos=0, retain=False)
+                self.device.publish(topic='elevator_002/spirit-level', payload=random.randrange(-9, 2), qos=0, retain=False)
+                self.device.publish(topic='elevator_002/weight', payload=random.normalvariate(900, 300), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_002/hight-difference', payload=random.randrange(-1, 18), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_002/vibration-amplitude', payload=random.randrange(10), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_002/vibration-period', payload=random.randrange(-10, 10), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_002/voltage', payload=random.normalvariate(1, 0.1), qos=0, retain=False)
                 self.device.publish(topic='elevator_002/alarm', payload='0', qos=1, retain=False)
                 time.sleep(5)
 
             elif elevator == 3:
-                # self.device.publish(topic='elevator_003/destination-floor', payload=random.randrange(-1, 4), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_003/current-floor', payload=random.randrange(-1, 4), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_003/door', payload=random.randrange(0, 1), qos=0, retain=False)
-                # self.device.publish(topic='elevator_003/people', payload=random.randrange(0, 1), qos=0, retain=False)
-                # self.device.publish(topic='elevator_003/speed', payload=random.normalvariate(2, 0.3), qos=0, retain=False)
-                # self.device.publish(topic='elevator_003/spirit-level', payload=random.randrange(-5, 5), qos=0, retain=False)
-                # self.device.publish(topic='elevator_003/weight', payload=random.normalvariate(500, 100), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_003/hight-difference', payload=random.randrange(-10, 8), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_003/vibration-amplitude', payload=random.randrange(0, 8), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_003/vibration-period', payload=random.randrange(-10, 8), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_003/voltage', payload=random.normalvariate(0, 0.1), qos=0, retain=False)
+                self.device.publish(topic='elevator_003/destination-floor', payload=random.randrange(-1, 4), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_003/current-floor', payload=random.randrange(-1, 4), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_003/door', payload=random.randrange(0, 1), qos=0, retain=False)
+                self.device.publish(topic='elevator_003/people', payload=random.randrange(0, 1), qos=0, retain=False)
+                self.device.publish(topic='elevator_003/speed', payload=random.normalvariate(2, 0.3), qos=0, retain=False)
+                self.device.publish(topic='elevator_003/spirit-level', payload=random.randrange(-5, 5), qos=0, retain=False)
+                self.device.publish(topic='elevator_003/weight', payload=random.normalvariate(500, 100), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_003/hight-difference', payload=random.randrange(-10, 8), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_003/vibration-amplitude', payload=random.randrange(0, 8), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_003/vibration-period', payload=random.randrange(-10, 8), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_003/voltage', payload=random.normalvariate(0, 0.1), qos=0, retain=False)
                 self.device.publish(topic='elevator_003/alarm', payload='0', qos=1, retain=False)
                 time.sleep(5)
             elif elevator == 4:
-                # self.device.publish(topic='elevator_004/destination-floor', payload=random.randrange(-1, 3), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_004/current-floor', payload=random.randrange(-1, 3), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_004/door', payload=random.randrange(0, 1), qos=0, retain=False)
-                # self.device.publish(topic='elevator_004/people', payload=random.randrange(0, 1), qos=0, retain=False)
-                # self.device.publish(topic='elevator_004/speed', payload=random.normalvariate(2, 0.3), qos=0, retain=False)
-                # self.device.publish(topic='elevator_004/spirit-level', payload=random.randrange(-5, 5), qos=0, retain=False)
-                # self.device.publish(topic='elevator_004/weight', payload=random.normalvariate(500, 100), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_004/hight-difference', payload=random.randrange(-10, 8), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_004/vibration-amplitude', payload=random.randrange(0, 8), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_004/vibration-period', payload=random.randrange(-10, 8), qos=0,
-                #                     retain=False)
-                # self.device.publish(topic='elevator_004/voltage', payload=random.normalvariate(0, 0.1), qos=0, retain=False)
+                self.device.publish(topic='elevator_004/destination-floor', payload=random.randrange(-1, 3), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_004/current-floor', payload=random.randrange(-1, 3), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_004/door', payload=random.randrange(0, 1), qos=0, retain=False)
+                self.device.publish(topic='elevator_004/people', payload=random.randrange(0, 1), qos=0, retain=False)
+                self.device.publish(topic='elevator_004/speed', payload=random.normalvariate(2, 0.3), qos=0, retain=False)
+                self.device.publish(topic='elevator_004/spirit-level', payload=random.randrange(-5, 5), qos=0, retain=False)
+                self.device.publish(topic='elevator_004/weight', payload=random.normalvariate(500, 100), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_004/hight-difference', payload=random.randrange(-10, 8), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_004/vibration-amplitude', payload=random.randrange(0, 8), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_004/vibration-period', payload=random.randrange(-10, 8), qos=0,
+                                    retain=False)
+                self.device.publish(topic='elevator_004/voltage', payload=random.normalvariate(0, 0.1), qos=0, retain=False)
                 self.device.publish(topic='elevator_004/alarm', payload='0', qos=1, retain=False)
                 time.sleep(5)
