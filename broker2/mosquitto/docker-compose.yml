@@ -1,0 +1,10 @@
+version: "3"
+services:
+  mosquitto2:
+    image: eclipse-mosquitto
+    ports: 
+      - 1884:2884
+    volumes:
+      - ./config:/mosquitto/config
+      - ./data:/mosquitto/data
+      - ./log:/mosquitto/log
