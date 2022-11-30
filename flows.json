@@ -1,0 +1,2067 @@
+[
+    {
+        "id": "f8e54022aa126fc1",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cdd2521eb8383d72",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f94317cf1b286c22",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "99b558fd82f75564",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f0d3e62a44855f4a",
+        "type": "tab",
+        "label": "Flow 5",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8b2c1ae1e2c66406",
+        "type": "tab",
+        "label": "Flow 6",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "64cfca86bc27c659",
+        "type": "kafka-broker",
+        "name": "",
+        "hosts": "localhost:9093",
+        "selfsign": false,
+        "usetls": false,
+        "cacert": "",
+        "clientcert": "",
+        "privatekey": "",
+        "passphrase": ""
+    },
+    {
+        "id": "462b49ef62b19844",
+        "type": "ui_tab",
+        "name": "ElevatorMonitoring",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c11aae7d9be30f6a",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "f4fa000e3fae8dd3",
+        "type": "ui_group",
+        "name": "Elevator 003",
+        "tab": "462b49ef62b19844",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "06228985d73f2137",
+        "type": "kafka-broker",
+        "name": "kafka-broker2",
+        "hosts": "localhost:9094",
+        "selfsign": false,
+        "usetls": false,
+        "cacert": "",
+        "clientcert": "",
+        "privatekey": "",
+        "passphrase": ""
+    },
+    {
+        "id": "082c370db6cbc2a5",
+        "type": "ui_group",
+        "name": "Elevator 001",
+        "tab": "462b49ef62b19844",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cbe61a5d77aea72a",
+        "type": "ui_tab",
+        "name": "Alarms",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "65708cb1807b2c7a",
+        "type": "ui_group",
+        "name": "",
+        "tab": "cbe61a5d77aea72a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "74e0622cbb80062f",
+        "type": "kafka-broker",
+        "name": "kafka-broker3",
+        "hosts": "localhost:9095",
+        "selfsign": false,
+        "usetls": false,
+        "cacert": "",
+        "clientcert": "",
+        "privatekey": "",
+        "passphrase": ""
+    },
+    {
+        "id": "13fe9c9c9bc4fe0f",
+        "type": "ui_group",
+        "name": "Elevator 004",
+        "tab": "462b49ef62b19844",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ccef2f22b6703012",
+        "type": "ui_group",
+        "name": "Elevator 002",
+        "tab": "462b49ef62b19844",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2b89616f0ec99a8f",
+        "type": "ui_tab",
+        "name": "Cautionn",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f3450785f05d1b51",
+        "type": "ui_group",
+        "name": "",
+        "tab": "2b89616f0ec99a8f",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f76956af150e3d91",
+        "type": "kafka-consumer",
+        "z": "f8e54022aa126fc1",
+        "name": "",
+        "broker": "64cfca86bc27c659",
+        "outOfRangeOffset": "earliest",
+        "fromOffset": "latest",
+        "topic": "speed",
+        "groupid": "",
+        "x": 120,
+        "y": 500,
+        "wires": [
+            [
+                "42ca08a89cf84170"
+            ]
+        ]
+    },
+    {
+        "id": "38fa40a247e8ae4a",
+        "type": "ui_chart",
+        "z": "f8e54022aa126fc1",
+        "name": "",
+        "group": "082c370db6cbc2a5",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Speed",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 650,
+        "y": 420,
+        "wires": [
+            []
+        ],
+        "info": "msg.payload.value"
+    },
+    {
+        "id": "6c3b99cbb384c965",
+        "type": "ui_chart",
+        "z": "f8e54022aa126fc1",
+        "name": "",
+        "group": "f4fa000e3fae8dd3",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Speed",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 650,
+        "y": 520,
+        "wires": [
+            []
+        ],
+        "info": "msg.payload.value"
+    },
+    {
+        "id": "0736e58c6ed79e39",
+        "type": "ui_chart",
+        "z": "f8e54022aa126fc1",
+        "name": "",
+        "group": "13fe9c9c9bc4fe0f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Speed",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 650,
+        "y": 600,
+        "wires": [
+            []
+        ],
+        "info": "msg.payload.value"
+    },
+    {
+        "id": "42ca08a89cf84170",
+        "type": "switch",
+        "z": "f8e54022aa126fc1",
+        "name": "",
+        "property": "payload.key",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "\"001\"",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "\"002\"",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "\"003\"",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "\"004\"",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 310,
+        "y": 520,
+        "wires": [
+            [
+                "042e60abada2a53a"
+            ],
+            [
+                "47508040b17ff3a1"
+            ],
+            [
+                "dc417db940795b5d"
+            ],
+            [
+                "4d376b2e1622b1ca"
+            ]
+        ]
+    },
+    {
+        "id": "042e60abada2a53a",
+        "type": "function",
+        "z": "f8e54022aa126fc1",
+        "name": "function 21",
+        "func": "//read payload\nvar stringValue = msg.payload.value;\n\n//convert string to float to 2 decimal places\nvar floatValue = parseFloat(stringValue.substring(1,5));\n\n//set and return payload\nmsg.payload = floatValue;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 440,
+        "wires": [
+            [
+                "38fa40a247e8ae4a"
+            ]
+        ]
+    },
+    {
+        "id": "dc417db940795b5d",
+        "type": "function",
+        "z": "f8e54022aa126fc1",
+        "name": "function 22",
+        "func": "//read payload\nvar stringValue = msg.payload.value;\n\n//convert string to float to 2 decimal places\nvar floatValue = parseFloat(stringValue.substring(1,5));\n\n//set and return payload\nmsg.payload = floatValue;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 520,
+        "wires": [
+            [
+                "6c3b99cbb384c965"
+            ]
+        ]
+    },
+    {
+        "id": "4d376b2e1622b1ca",
+        "type": "function",
+        "z": "f8e54022aa126fc1",
+        "name": "function 23",
+        "func": "//read payload\nvar stringValue = msg.payload.value;\n\n//convert string to float to 2 decimal places\nvar floatValue = parseFloat(stringValue.substring(1,5));\n\n//set and return payload\nmsg.payload = floatValue;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 600,
+        "wires": [
+            [
+                "0736e58c6ed79e39"
+            ]
+        ]
+    },
+    {
+        "id": "2563ad72f561d6bc",
+        "type": "ui_chart",
+        "z": "f8e54022aa126fc1",
+        "name": "",
+        "group": "ccef2f22b6703012",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Speed",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 650,
+        "y": 480,
+        "wires": [
+            []
+        ],
+        "info": "msg.payload.value"
+    },
+    {
+        "id": "47508040b17ff3a1",
+        "type": "function",
+        "z": "f8e54022aa126fc1",
+        "name": "function 29",
+        "func": "//read payload\nvar stringValue = msg.payload.value;\n\n//convert string to float to 2 decimal places\nvar floatValue = parseFloat(stringValue.substring(1,5));\n\n//set and return payload\nmsg.payload = floatValue;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 480,
+        "wires": [
+            [
+                "2563ad72f561d6bc"
+            ]
+        ]
+    },
+    {
+        "id": "2725c0b8aee3e01f",
+        "type": "kafka-consumer",
+        "z": "cdd2521eb8383d72",
+        "name": "",
+        "broker": "64cfca86bc27c659",
+        "outOfRangeOffset": "earliest",
+        "fromOffset": "latest",
+        "topic": "voltage",
+        "groupid": "",
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "ec3bcfd2db663549"
+            ]
+        ]
+    },
+    {
+        "id": "76c2757d6257da24",
+        "type": "function",
+        "z": "cdd2521eb8383d72",
+        "name": "function 6",
+        "func": "//read payload\nvar stringValue = msg.payload.value;\n\n//convert string to float to 2 decimal places\nvar floatValue = parseFloat(stringValue.substring(1,5));\n\n//set and return payload\nmsg.payload = floatValue;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 100,
+        "wires": [
+            [
+                "8237472e1c545b04"
+            ]
+        ]
+    },
+    {
+        "id": "c062217139e0d361",
+        "type": "function",
+        "z": "cdd2521eb8383d72",
+        "name": "function 7",
+        "func": "//read payload\nvar stringValue = msg.payload.value;\n\n//convert string to float to 2 decimal places\nvar floatValue = parseFloat(stringValue.substring(1,5));\n\n//set and return payload\nmsg.payload = floatValue;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 200,
+        "wires": [
+            [
+                "b172c7e752136cdd"
+            ]
+        ]
+    },
+    {
+        "id": "fa1b0b2486ac1c80",
+        "type": "function",
+        "z": "cdd2521eb8383d72",
+        "name": "function 8",
+        "func": "//read payload\nvar stringValue = msg.payload.value;\n\n//convert string to float to 2 decimal places\nvar floatValue = parseFloat(stringValue.substring(1,5));\n\n//set and return payload\nmsg.payload = floatValue;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 280,
+        "wires": [
+            [
+                "f4d5a49a3d4152a6"
+            ]
+        ]
+    },
+    {
+        "id": "8237472e1c545b04",
+        "type": "ui_chart",
+        "z": "cdd2521eb8383d72",
+        "name": "",
+        "group": "082c370db6cbc2a5",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Voltage",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 640,
+        "y": 100,
+        "wires": [
+            []
+        ],
+        "info": "msg.payload.value"
+    },
+    {
+        "id": "b172c7e752136cdd",
+        "type": "ui_chart",
+        "z": "cdd2521eb8383d72",
+        "name": "",
+        "group": "f4fa000e3fae8dd3",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Voltage",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 640,
+        "y": 200,
+        "wires": [
+            []
+        ],
+        "info": "msg.payload.value"
+    },
+    {
+        "id": "f4d5a49a3d4152a6",
+        "type": "ui_chart",
+        "z": "cdd2521eb8383d72",
+        "name": "",
+        "group": "13fe9c9c9bc4fe0f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Voltage",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 640,
+        "y": 280,
+        "wires": [
+            []
+        ],
+        "info": "msg.payload.value"
+    },
+    {
+        "id": "ec3bcfd2db663549",
+        "type": "switch",
+        "z": "cdd2521eb8383d72",
+        "name": "",
+        "property": "payload.key",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "\"001\"",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "\"002\"",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "\"003\"",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "\"004\"",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 190,
+        "y": 200,
+        "wires": [
+            [
+                "76c2757d6257da24"
+            ],
+            [
+                "0cf3e3c7a79876d6"
+            ],
+            [
+                "c062217139e0d361"
+            ],
+            [
+                "fa1b0b2486ac1c80"
+            ]
+        ]
+    },
+    {
+        "id": "0cf3e3c7a79876d6",
+        "type": "function",
+        "z": "cdd2521eb8383d72",
+        "name": "function 30",
+        "func": "//read payload\nvar stringValue = msg.payload.value;\n\n//convert string to float to 2 decimal places\nvar floatValue = parseFloat(stringValue.substring(1,5));\n\n//set and return payload\nmsg.payload = floatValue;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 140,
+        "wires": [
+            [
+                "820b6a61b6839e14"
+            ]
+        ]
+    },
+    {
+        "id": "820b6a61b6839e14",
+        "type": "ui_chart",
+        "z": "cdd2521eb8383d72",
+        "name": "",
+        "group": "ccef2f22b6703012",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Voltage",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 670,
+        "y": 140,
+        "wires": [
+            []
+        ],
+        "info": "msg.payload.value"
+    },
+    {
+        "id": "185663407a21b168",
+        "type": "kafka-consumer",
+        "z": "f94317cf1b286c22",
+        "name": "",
+        "broker": "64cfca86bc27c659",
+        "outOfRangeOffset": "earliest",
+        "fromOffset": "latest",
+        "topic": "destination-floor",
+        "groupid": "",
+        "x": 100,
+        "y": 140,
+        "wires": [
+            [
+                "c45887ce9c685567"
+            ]
+        ]
+    },
+    {
+        "id": "e5f007cc459cd5a2",
+        "type": "ui_chart",
+        "z": "f94317cf1b286c22",
+        "name": "",
+        "group": "082c370db6cbc2a5",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Destination floor",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 540,
+        "y": 140,
+        "wires": [
+            []
+        ],
+        "info": "msg.payload.value"
+    },
+    {
+        "id": "fd50ea954d625580",
+        "type": "function",
+        "z": "f94317cf1b286c22",
+        "name": "function 9",
+        "func": "//read payload\nvar stringValue = msg.payload.value;\n\n//convert string to float to 2 decimal places\nvar floatValue = parseFloat(stringValue.substring(1,5));\n\n//set and return payload\nmsg.payload = floatValue;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 140,
+        "wires": [
+            [
+                "e5f007cc459cd5a2"
+            ]
+        ]
+    },
+    {
+        "id": "7c355e7e8839c1db",
+        "type": "ui_chart",
+        "z": "f94317cf1b286c22",
+        "name": "",
+        "group": "f4fa000e3fae8dd3",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Destination floor",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 540,
+        "y": 240,
+        "wires": [
+            []
+        ],
+        "info": "msg.payload.value"
+    },
+    {
+        "id": "e196b13861157a4f",
+        "type": "function",
+        "z": "f94317cf1b286c22",
+        "name": "function 10",
+        "func": "//read payload\nvar stringValue = msg.payload.value;\n\n//convert string to float to 2 decimal places\nvar floatValue = parseFloat(stringValue.substring(1,5));\n\n//set and return payload\nmsg.payload = floatValue;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 240,
+        "wires": [
+            [
+                "7c355e7e8839c1db"
+            ]
+        ]
+    },
+    {
+        "id": "49172f39482596d3",
+        "type": "ui_chart",
+        "z": "f94317cf1b286c22",
+        "name": "",
+        "group": "13fe9c9c9bc4fe0f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Destination floor",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 540,
+        "y": 320,
+        "wires": [
+            []
+        ],
+        "info": "msg.payload.value"
+    },
+    {
+        "id": "827ed753f73c86e4",
+        "type": "function",
+        "z": "f94317cf1b286c22",
+        "name": "function 11",
+        "func": "//read payload\nvar stringValue = msg.payload.value;\n\n//convert string to float to 2 decimal places\nvar floatValue = parseFloat(stringValue.substring(1,5));\n\n//set and return payload\nmsg.payload = floatValue;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 320,
+        "wires": [
+            [
+                "49172f39482596d3"
+            ]
+        ]
+    },
+    {
+        "id": "c45887ce9c685567",
+        "type": "switch",
+        "z": "f94317cf1b286c22",
+        "name": "",
+        "property": "payload.key",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "\"001\"",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "\"002\"",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "\"003\"",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "\"004\"",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 170,
+        "y": 240,
+        "wires": [
+            [
+                "fd50ea954d625580"
+            ],
+            [],
+            [
+                "e196b13861157a4f"
+            ],
+            [
+                "827ed753f73c86e4"
+            ]
+        ]
+    },
+    {
+        "id": "0fab0436f902bef2",
+        "type": "ui_chart",
+        "z": "f94317cf1b286c22",
+        "name": "",
+        "group": "ccef2f22b6703012",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Destination floor",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 560,
+        "y": 200,
+        "wires": [
+            []
+        ],
+        "info": "msg.payload.value"
+    },
+    {
+        "id": "3848b357bae545a9",
+        "type": "function",
+        "z": "f94317cf1b286c22",
+        "name": "function 31",
+        "func": "//read payload\nvar stringValue = msg.payload.value;\n\n//convert string to float to 2 decimal places\nvar floatValue = parseFloat(stringValue.substring(1,5));\n\n//set and return payload\nmsg.payload = floatValue;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 200,
+        "wires": [
+            [
+                "0fab0436f902bef2"
+            ]
+        ]
+    },
+    {
+        "id": "cfed80718bbb91d4",
+        "type": "kafka-consumer",
+        "z": "99b558fd82f75564",
+        "name": "",
+        "broker": "64cfca86bc27c659",
+        "outOfRangeOffset": "earliest",
+        "fromOffset": "latest",
+        "topic": "current-floor",
+        "groupid": "",
+        "x": 100,
+        "y": 140,
+        "wires": [
+            [
+                "e3a7f63c075a269c"
+            ]
+        ]
+    },
+    {
+        "id": "8e56c47205f2813e",
+        "type": "ui_chart",
+        "z": "99b558fd82f75564",
+        "name": "",
+        "group": "082c370db6cbc2a5",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Current floor",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 550,
+        "y": 140,
+        "wires": [
+            []
+        ],
+        "info": "msg.payload.value"
+    },
+    {
+        "id": "a1045a83a59f6405",
+        "type": "function",
+        "z": "99b558fd82f75564",
+        "name": "function 12",
+        "func": "//read payload\nvar stringValue = msg.payload.value;\n\n//convert string to float to 2 decimal places\nvar floatValue = parseFloat(stringValue.substring(1,5));\n\n//set and return payload\nmsg.payload = floatValue;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 140,
+        "wires": [
+            [
+                "8e56c47205f2813e"
+            ]
+        ]
+    },
+    {
+        "id": "8f4618a3424a2986",
+        "type": "ui_chart",
+        "z": "99b558fd82f75564",
+        "name": "",
+        "group": "f4fa000e3fae8dd3",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Current floor",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 550,
+        "y": 240,
+        "wires": [
+            []
+        ],
+        "info": "msg.payload.value"
+    },
+    {
+        "id": "9f16b69d89213bca",
+        "type": "function",
+        "z": "99b558fd82f75564",
+        "name": "function 13",
+        "func": "//read payload\nvar stringValue = msg.payload.value;\n\n//convert string to float to 2 decimal places\nvar floatValue = parseFloat(stringValue.substring(1,5));\n\n//set and return payload\nmsg.payload = floatValue;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 240,
+        "wires": [
+            [
+                "8f4618a3424a2986"
+            ]
+        ]
+    },
+    {
+        "id": "3aea8ce9594a4643",
+        "type": "ui_chart",
+        "z": "99b558fd82f75564",
+        "name": "",
+        "group": "13fe9c9c9bc4fe0f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Current floor",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 550,
+        "y": 320,
+        "wires": [
+            []
+        ],
+        "info": "msg.payload.value"
+    },
+    {
+        "id": "f64c7a12ce1a7333",
+        "type": "function",
+        "z": "99b558fd82f75564",
+        "name": "function 14",
+        "func": "//read payload\nvar stringValue = msg.payload.value;\n\n//convert string to float to 2 decimal places\nvar floatValue = parseFloat(stringValue.substring(1,5));\n\n//set and return payload\nmsg.payload = floatValue;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 320,
+        "wires": [
+            [
+                "3aea8ce9594a4643"
+            ]
+        ]
+    },
+    {
+        "id": "e3a7f63c075a269c",
+        "type": "switch",
+        "z": "99b558fd82f75564",
+        "name": "",
+        "property": "payload.key",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "\"001\"",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "\"002\"",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "\"003\"",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "\"004\"",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 210,
+        "y": 240,
+        "wires": [
+            [
+                "a1045a83a59f6405"
+            ],
+            [
+                "1f6b48afebc9f990"
+            ],
+            [
+                "9f16b69d89213bca"
+            ],
+            [
+                "f64c7a12ce1a7333"
+            ]
+        ]
+    },
+    {
+        "id": "0a848c3673be5e5e",
+        "type": "ui_chart",
+        "z": "99b558fd82f75564",
+        "name": "",
+        "group": "ccef2f22b6703012",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Current floor",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 570,
+        "y": 200,
+        "wires": [
+            []
+        ],
+        "info": "msg.payload.value"
+    },
+    {
+        "id": "1f6b48afebc9f990",
+        "type": "function",
+        "z": "99b558fd82f75564",
+        "name": "function 32",
+        "func": "//read payload\nvar stringValue = msg.payload.value;\n\n//convert string to float to 2 decimal places\nvar floatValue = parseFloat(stringValue.substring(1,5));\n\n//set and return payload\nmsg.payload = floatValue;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 200,
+        "wires": [
+            [
+                "0a848c3673be5e5e"
+            ]
+        ]
+    },
+    {
+        "id": "10600ba3ef527995",
+        "type": "kafka-consumer",
+        "z": "f0d3e62a44855f4a",
+        "name": "",
+        "broker": "64cfca86bc27c659",
+        "outOfRangeOffset": "earliest",
+        "fromOffset": "latest",
+        "topic": "alarm",
+        "groupid": "",
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "a014c705b5df6ca0",
+                "b521e39ddaa9a85e"
+            ]
+        ]
+    },
+    {
+        "id": "b7f926df1b7da973",
+        "type": "function",
+        "z": "f0d3e62a44855f4a",
+        "name": "function 15",
+        "func": "//read payload\nif (global.get(\"is_alarmed1\")==false){\n    var stringValue = msg.payload.value;\n\n    //convert string to float to 2 decimal places\n    var floatValue = parseInt(stringValue.substring(1, 3));\n\n    //set and return payload\n\n    if (floatValue > 0) {\n        msg.payload = \"THERE IS A ALARM!!!\";\n        return msg;\n    }\n    else {\n        msg.payload = \"Everything is OK.\";\n        return msg;\n    }\n}else{\n    msg.payload = \"THERE IS A ALARM!!!\";\n    return msg;\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 240,
+        "wires": [
+            [
+                "4efa7acbf66bbfa4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "26b4e3578f28dd07",
+        "type": "function",
+        "z": "f0d3e62a44855f4a",
+        "name": "function 16",
+        "func": "//read payload\nif (global.get(\"is_alarmed3\") == false) {\n    var stringValue = msg.payload.value;\n\n    //convert string to float to 2 decimal places\n    var floatValue = parseInt(stringValue.substring(1, 3));\n\n    //set and return payload\n\n    if (floatValue > 0) {\n        msg.payload = \"THERE IS A ALARM!!!\";\n        return msg;\n    }\n    else {\n        msg.payload = \"Everything is OK.\";\n        return msg;\n    }\n} else {\n    msg.payload = \"THERE IS A ALARM!!!\";\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 380,
+        "wires": [
+            [
+                "4bf12eda0e813854"
+            ]
+        ]
+    },
+    {
+        "id": "ade984bd44f26c17",
+        "type": "function",
+        "z": "f0d3e62a44855f4a",
+        "name": "function 17",
+        "func": "//read payload\nif (global.get(\"is_alarmed4\") == false) {\n    var stringValue = msg.payload.value;\n\n    //convert string to float to 2 decimal places\n    var floatValue = parseInt(stringValue.substring(1, 3));\n\n    //set and return payload\n\n    if (floatValue > 0) {\n        msg.payload = \"THERE IS A ALARM!!!\";\n        return msg;\n    }\n    else {\n        msg.payload = \"Everything is OK.\";\n        return msg;\n    }\n} else {\n    msg.payload = \"THERE IS A ALARM!!!\";\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 460,
+        "wires": [
+            [
+                "9af83e1935795551"
+            ]
+        ]
+    },
+    {
+        "id": "0895da4555c36473",
+        "type": "ui_toast",
+        "z": "f0d3e62a44855f4a",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Warning",
+        "x": 600,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "4efa7acbf66bbfa4",
+        "type": "ui_text",
+        "z": "f0d3e62a44855f4a",
+        "group": "65708cb1807b2c7a",
+        "order": 3,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Elevator 001",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 600,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "4bf12eda0e813854",
+        "type": "ui_text",
+        "z": "f0d3e62a44855f4a",
+        "group": "65708cb1807b2c7a",
+        "order": 3,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Elevator 003",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 600,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "9af83e1935795551",
+        "type": "ui_text",
+        "z": "f0d3e62a44855f4a",
+        "group": "65708cb1807b2c7a",
+        "order": 3,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Elevator 004",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 600,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "b521e39ddaa9a85e",
+        "type": "function",
+        "z": "f0d3e62a44855f4a",
+        "name": "function 18",
+        "func": "//read payload\nif (global.get(\"is_alarmed1\")==false){\n    var stringValue = msg.payload.value;\n\n    //convert string to float to 2 decimal places\n    var floatValue = parseFloat(stringValue.substring(1, 3));\n    if (floatValue > 0) {\n        global.set(\"is_alarmed1\", true)\n        msg.payload = \"THERE IS A ALARM!!!\";\n        return msg;\n    }\n    \n}\nif (global.get(\"is_alarmed2\") == false) {\n    var stringValue = msg.payload.value;\n\n    //convert string to float to 2 decimal places\n    var floatValue = parseFloat(stringValue.substring(1, 3));\n    if (floatValue > 0) {\n        global.set(\"is_alarmed2\", true)\n        msg.payload = \"THERE IS A ALARM!!!\";\n        return msg;\n    }\n\n}\nif (global.get(\"is_alarmed3\") == false) {\n    var stringValue = msg.payload.value;\n\n    //convert string to float to 2 decimal places\n    var floatValue = parseFloat(stringValue.substring(1, 3));\n    if (floatValue > 0) {\n        global.set(\"is_alarmed3\", true)\n        msg.payload = \"THERE IS A ALARM!!!\";\n        return msg;\n    }\n\n}\nif (global.get(\"is_alarmed4\") == false) {\n    var stringValue = msg.payload.value;\n\n    //convert string to float to 2 decimal places\n    var floatValue = parseFloat(stringValue.substring(1, 3));\n    if (floatValue > 0) {\n        global.set(\"is_alarmed4\", true)\n        msg.payload = \"THERE IS A ALARM!!!\";\n        return msg;\n    }\n\n}\n\n\n//set and return payload\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"is_alarmed1\", false);\nglobal.set(\"is_alarmed2\", false);\nglobal.set(\"is_alarmed3\", false);\nglobal.set(\"is_alarmed4\", false);",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "0895da4555c36473"
+            ]
+        ]
+    },
+    {
+        "id": "a014c705b5df6ca0",
+        "type": "switch",
+        "z": "f0d3e62a44855f4a",
+        "name": "",
+        "property": "payload.key",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "\"001\"",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "\"002\"",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "\"003\"",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "\"004\"",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 190,
+        "y": 300,
+        "wires": [
+            [
+                "b7f926df1b7da973"
+            ],
+            [
+                "8d60fba9f74af0f7"
+            ],
+            [
+                "26b4e3578f28dd07"
+            ],
+            [
+                "ade984bd44f26c17"
+            ]
+        ]
+    },
+    {
+        "id": "8d60fba9f74af0f7",
+        "type": "function",
+        "z": "f0d3e62a44855f4a",
+        "name": "function 28",
+        "func": "//read payload\nif (global.get(\"is_alarmed2\")==false){\n    var stringValue = msg.payload.value;\n\n    //convert string to float to 2 decimal places\n    var floatValue = parseInt(stringValue.substring(1, 3));\n\n    //set and return payload\n\n    if (floatValue > 0) {\n        msg.payload = \"THERE IS A ALARM!!!\";\n        return msg;\n    }\n    else {\n        msg.payload = \"Everything is OK.\";\n        return msg;\n    }\n}else{\n    msg.payload = \"THERE IS A ALARM!!!\";\n    return msg;\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 300,
+        "wires": [
+            [
+                "95ebee4f16ff95a6"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "95ebee4f16ff95a6",
+        "type": "ui_text",
+        "z": "f0d3e62a44855f4a",
+        "group": "65708cb1807b2c7a",
+        "order": 3,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Elevator 002",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 600,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "6d86afac2fc5c748",
+        "type": "kafka-consumer",
+        "z": "8b2c1ae1e2c66406",
+        "name": "",
+        "broker": "64cfca86bc27c659",
+        "outOfRangeOffset": "earliest",
+        "fromOffset": "latest",
+        "topic": "vibration-amplitude",
+        "groupid": "",
+        "x": 100,
+        "y": 220,
+        "wires": [
+            [
+                "915020d82b33b2a6",
+                "4140437899565dd2"
+            ]
+        ]
+    },
+    {
+        "id": "c585928bb43601cf",
+        "type": "function",
+        "z": "8b2c1ae1e2c66406",
+        "name": "function 33",
+        "func": "//read payload\nif (global.get(\"is_alarmed1\")==false){\n    var stringValue = msg.payload.value;\n\n    //convert string to float to 2 decimal places\n    var floatValue = parseInt(stringValue.substring(1, 3));\n\n    //set and return payload\n\n    if (floatValue > 6) {\n        msg.payload = \"Caution: vibration detected.\";\n        return msg;\n    }\n    else {\n        msg.payload = \"Everything is OK.\";\n        return msg;\n    }\n}else{\n    msg.payload = \"Caution: vibration detected.\";\n    return msg;\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 300,
+        "wires": [
+            [
+                "07f2fba422014844"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ac82f8cd5a0a3a0d",
+        "type": "function",
+        "z": "8b2c1ae1e2c66406",
+        "name": "function 34",
+        "func": "//read payload\nif (global.get(\"is_alarmed3\") == false) {\n    var stringValue = msg.payload.value;\n\n    //convert string to float to 2 decimal places\n    var floatValue = parseInt(stringValue.substring(1, 3));\n\n    //set and return payload\n\n    if (floatValue > 6) {\n        msg.payload = \"Caution: vibration detected.\";\n        return msg;\n    }\n    else {\n        msg.payload = \"Everything is OK.\";\n        return msg;\n    }\n} else {\n    msg.payload = \"Caution: vibration detected.\";\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 440,
+        "wires": [
+            [
+                "c024d70ce150d1ce"
+            ]
+        ]
+    },
+    {
+        "id": "0932727d2e6ae9b7",
+        "type": "function",
+        "z": "8b2c1ae1e2c66406",
+        "name": "function 35",
+        "func": "//read payload\nif (global.get(\"is_alarmed4\") == false) {\n    var stringValue = msg.payload.value;\n\n    //convert string to float to 2 decimal places\n    var floatValue = parseInt(stringValue.substring(1, 3));\n\n    //set and return payload\n\n    if (floatValue > 6) {\n        msg.payload = \"Caution: vibration detected.\";\n        return msg;\n    }\n    else {\n        msg.payload = \"Everything is OK.\";\n        return msg;\n    }\n} else {\n    msg.payload = \"Caution: vibration detected.\";\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 520,
+        "wires": [
+            [
+                "b88c38b2fa33355d"
+            ]
+        ]
+    },
+    {
+        "id": "840d9a8f4a4cb171",
+        "type": "ui_toast",
+        "z": "8b2c1ae1e2c66406",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Warning",
+        "x": 580,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "07f2fba422014844",
+        "type": "ui_text",
+        "z": "8b2c1ae1e2c66406",
+        "group": "f3450785f05d1b51",
+        "order": 3,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Elevator 001",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 580,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c024d70ce150d1ce",
+        "type": "ui_text",
+        "z": "8b2c1ae1e2c66406",
+        "group": "f3450785f05d1b51",
+        "order": 3,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Elevator 003",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 580,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "b88c38b2fa33355d",
+        "type": "ui_text",
+        "z": "8b2c1ae1e2c66406",
+        "group": "f3450785f05d1b51",
+        "order": 3,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Elevator 004",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 580,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "4140437899565dd2",
+        "type": "function",
+        "z": "8b2c1ae1e2c66406",
+        "name": "function 36",
+        "func": "//read payload\nif (global.get(\"is_alarmed1\")==false){\n    var stringValue = msg.payload.value;\n\n    //convert string to float to 2 decimal places\n    var floatValue = parseFloat(stringValue.substring(1, 3));\n    if (floatValue > 6) {\n        global.set(\"is_alarmed1\", true)\n        msg.payload = \"There is a caution.\";\n        return msg;\n    }\n    \n}\nif (global.get(\"is_alarmed2\") == false) {\n    var stringValue = msg.payload.value;\n\n    //convert string to float to 2 decimal places\n    var floatValue = parseFloat(stringValue.substring(1, 3));\n    if (floatValue > 6) {\n        global.set(\"is_alarmed2\", true)\n        msg.payload = \"There is a caution.\";\n        return msg;\n    }\n\n}\nif (global.get(\"is_alarmed3\") == false) {\n    var stringValue = msg.payload.value;\n\n    //convert string to float to 2 decimal places\n    var floatValue = parseFloat(stringValue.substring(1, 3));\n    if (floatValue > 6) {\n        global.set(\"is_alarmed3\", true)\n        msg.payload = \"There is a caution.\";\n        return msg;\n    }\n\n}\nif (global.get(\"is_alarmed4\") == false) {\n    var stringValue = msg.payload.value;\n\n    //convert string to float to 2 decimal places\n    var floatValue = parseFloat(stringValue.substring(1, 3));\n    if (floatValue > 6) {\n        global.set(\"is_alarmed4\", true)\n        msg.payload = \"There is a caution.\";\n        return msg;\n    }\n\n}\n\n\n//set and return payload\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"is_alarmed1\", false);\nglobal.set(\"is_alarmed2\", false);\nglobal.set(\"is_alarmed3\", false);\nglobal.set(\"is_alarmed4\", false);",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 140,
+        "wires": [
+            [
+                "840d9a8f4a4cb171"
+            ]
+        ]
+    },
+    {
+        "id": "915020d82b33b2a6",
+        "type": "switch",
+        "z": "8b2c1ae1e2c66406",
+        "name": "",
+        "property": "payload.key",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "\"001\"",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "\"02\"",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "\"003\"",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "\"004\"",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 170,
+        "y": 360,
+        "wires": [
+            [
+                "c585928bb43601cf"
+            ],
+            [
+                "19c8fcbeab523592"
+            ],
+            [
+                "ac82f8cd5a0a3a0d"
+            ],
+            [
+                "0932727d2e6ae9b7"
+            ]
+        ]
+    },
+    {
+        "id": "19c8fcbeab523592",
+        "type": "function",
+        "z": "8b2c1ae1e2c66406",
+        "name": "function 37",
+        "func": "//read payload\nif (global.get(\"is_alarmed2\")==false){\n    var stringValue = msg.payload.value;\n\n    //convert string to float to 2 decimal places\n    var floatValue = parseInt(stringValue.substring(1, 3));\n\n    //set and return payload\n\n    if (floatValue > 6) {\n        msg.payload = \"Caution: vibration detected.\";\n        return msg;\n    }\n    else {\n        msg.payload = \"Everything is OK.\";\n        return msg;\n    }\n}else{\n    msg.payload = \"Caution: vibration detected.\";\n    return msg;\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 360,
+        "wires": [
+            [
+                "4c9c77f89ffb5c12"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4c9c77f89ffb5c12",
+        "type": "ui_text",
+        "z": "8b2c1ae1e2c66406",
+        "group": "f3450785f05d1b51",
+        "order": 3,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Elevator 002",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 580,
+        "y": 360,
+        "wires": []
+    }
+]

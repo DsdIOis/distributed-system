@@ -1,0 +1,73 @@
+version: '3.3'
+
+services:
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - 2181:2181
+    container_name: zookeeper
+    networks:
+      default:
+        ipv4_address: 172.28.0.99
+
+  kafka0:
+    image: wurstmeister/kafka:2.13-2.6.0
+    depends_on:
+      - zookeeper
+    container_name: kafka0
+    hostname: kafka0
+    ports:
+      - 9093:9093
+    environment:
+      KAFKA_LISTENERS: INSIDE://:9092,OUTSIDE://:9093
+      KAFKA_ADVERTISED_LISTENERS: INSIDE://172.28.0.100:9092,OUTSIDE://localhost:9093
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_BROKER_ID: 0
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: "INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT"
+      KAFKA_INTER_BROKER_LISTENER_NAME: INSIDE
+    networks:
+      default:
+        ipv4_address: 172.28.0.100
+
+  kafka1:
+    image: wurstmeister/kafka:2.13-2.6.0
+    depends_on:
+      - zookeeper
+    container_name: kafka1
+    hostname: kafka1
+    ports:
+      - 9094:9094
+    environment:
+      KAFKA_LISTENERS: INSIDE://:9092,OUTSIDE://:9094
+      KAFKA_ADVERTISED_LISTENERS: INSIDE://172.28.0.101:9092,OUTSIDE://localhost:9094
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_BROKER_ID: 1
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: "INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT"
+      KAFKA_INTER_BROKER_LISTENER_NAME: INSIDE
+    networks:
+      default:
+        ipv4_address: 172.28.0.101
+
+  kafka2:
+    image: wurstmeister/kafka:2.13-2.6.0
+    depends_on:
+      - zookeeper
+    container_name: kafka2
+    hostname: kafka2
+    ports:
+      - 9095:9095
+    environment:
+      KAFKA_LISTENERS: INSIDE://:9092,OUTSIDE://:9095
+      KAFKA_ADVERTISED_LISTENERS: INSIDE://172.28.0.102:9092,OUTSIDE://localhost:9095
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_BROKER_ID: 2
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: "INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT"
+      KAFKA_INTER_BROKER_LISTENER_NAME: INSIDE
+    networks:
+      default:
+        ipv4_address: 172.28.0.102
+
+networks:
+  default:
+    external:
+      name: dev
